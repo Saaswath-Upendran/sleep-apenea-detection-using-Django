@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+
+
+{% block body %}
+{% if final > 0.5 %}
+<h3 class="text-center">The Prediction is You have Sleep Apena Disease please check with doc</h3>
+{% else %}
+<h3 class="text-center">Hurray You Are Healthy!</h3>
+{% endif %}
+{% endblock %}

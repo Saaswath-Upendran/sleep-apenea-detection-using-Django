@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+{% load bootstrap5%}
+{% block body %}
+<div class="container">
+    <h2 class="text-center">Prediction Form</h2>
+    <form  method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <input type="submit" class="btn btn-warning" value="Predict">
+
+    </form>
+</div>
+{% endblock %}
